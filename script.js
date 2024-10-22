@@ -31,10 +31,8 @@ tl.from("nav #navcontent", {
   y: -20,
 });
 tl.from("#home video", {
-  duration: 1.8,
+  duration: 1,
   opacity: 0,
-  scale: 0.1,
-  borderRadius:"50vw",
 });
 tl.from("#home #title h1", {
   duration: 0.8,
@@ -46,69 +44,69 @@ tl.from("#home #title-head", {
   opacity: 0,
 });
 tl.from("#home #Contact-btn", {
-  duration: 0.8,
+  duration: 0.2,
   opacity: 0,
 });
 tl.to("#home #Contact-btn", {
-  duration: 0.5,
+  duration: 0.2,
   opacity: 1,
 });
 tl.from("#icons", {
   duration: 0.2,
   opacity: 0,
-  x:50,
+  x: 50,
 });
 
-gsap.from('#about #right-content',{
-  opacity:0,
-  duration:2,
-  x:-300,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:"#about #right-content",
-    start:"top 40%",
-    end:"bottom 90%",
+gsap.from("#about #right-content", {
+  opacity: 0,
+  duration: 2,
+  x: -300,
+  ease: "ease-in",
+  scrollTrigger: {
+    trigger: "#about #right-content",
+    start: "top 40%",
+    end: "bottom 90%",
     // markers:true,
-    scrub:true,
-  }
-})
-gsap.from('#about #left-content',{
-  opacity:0,
-  duration:2,
-  x:300,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:"#about",
-    start:"top 40%",
-    end:"bottom 90%",
+    scrub: true,
+  },
+});
+gsap.from("#about #left-content", {
+  opacity: 0,
+  duration: 2,
+  x: 300,
+  ease: "ease-in",
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 40%",
+    end: "bottom 90%",
     // markers:true,
-    scrub:true,
-  }
-})
-gsap.from('#boxes .box',{
-  opacity:0,
-  duration:2,
-  y:300,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:"#boxes",
-    start:"top 40%",
-    end:"bottom 90%",
+    scrub: true,
+  },
+});
+gsap.from("#boxes .box", {
+  opacity: 0,
+  duration: 2,
+  y: 300,
+  ease: "ease-in",
+  scrollTrigger: {
+    trigger: "#boxes",
+    start: "top 40%",
+    end: "bottom 90%",
     // markers:true,
-    scrub:true,
-  }
-})
+    scrub: true,
+  },
+});
 
-gsap.from('#services #boxes-service .service',{
-  opacity:0,
-  duration:2,
-  y:300,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:"#services #boxes-service",
-    start:"top 40%",
-    end:"bottom 90%",
+gsap.from("#services #boxes-service .service", {
+  opacity: 0,
+  duration: 2,
+  y: 300,
+  ease: "ease-in",
+  scrollTrigger: {
+    trigger: "#services #boxes-service",
+    start: "top 40%",
+    end: "bottom 90%",
     // markers:true,
-    scrub:true,
-  }
-})
+    scrub: true,
+  },
+});

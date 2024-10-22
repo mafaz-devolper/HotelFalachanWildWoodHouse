@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gilroy;
-    color: #ffffff;
+    font-family: system-ui;
+    color: #000000;
 }
 
 html,
@@ -19,12 +19,13 @@ body {
 
 #main {
     width: 100%;
+    background-color: #fff;
 }
 
 nav {
     height: 100px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.119);
+    background-color: rgba(0, 59, 44, 0.587);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,14 +35,8 @@ nav {
     z-index: 12;
 }
 
-#logo {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.4vw;
-    text-transform: uppercase;
-    font-family: integral CF;
-    font-weight: 600;
-    padding-left: 1.5vw;
+#logo img {
+    height: 3vw;
 }
 
 #navcontent {
@@ -58,11 +53,6 @@ nav {
 
 #navcontent:hover {
     background-color: #ffffff;
-}
-
-#navcontent img {
-    height: 50%;
-    width: 50%;
 }
 
 #menu-content {
@@ -92,13 +82,12 @@ nav {
     filter: drop-shadow(0px 0px 10px white);
 }
 
-#menu-content #close {
-    height: 70px;
-    width: 70px;
+#menu-content #close i {
+    font-size: 12vw;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: invert();
     overflow: hidden;
     position: absolute;
     top: 5%;
@@ -121,7 +110,7 @@ nav {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-color: #111;
+    background-color: #fff;
 }
 
 #home video {
@@ -222,7 +211,7 @@ nav {
 .icon2 {
     height: 80px;
     width: 80px;
-    background-color: #ffffff9f;
+    background-color: #0000009f;
     border-radius: 50%;
     overflow: hidden;
     backdrop-filter: blur(12px);
@@ -256,7 +245,7 @@ nav {
 #about {
     height: 100vh;
     width: 100%;
-    background-color: #111;
+    background-color: #fff;
     display: flex;
 }
 
@@ -273,7 +262,6 @@ nav {
 
 #right-content h1 {
     font-size: 4vw;
-    font-family: integral CF;
     font-weight: 600;
 }
 
@@ -289,7 +277,7 @@ nav {
     text-decoration: none;
     padding: 1vw 2vw;
     border-radius: 5px;
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
 }
 
 #right-content a:hover {
@@ -365,7 +353,7 @@ nav {
 #services {
     height: 100vh;
     width: 100%;
-    background-color: #111;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,7 +370,6 @@ nav {
 
 #title-content h1 {
     font-size: 4vw;
-    font-family: integral CF;
     color: #ffffff;
 }
 
@@ -401,7 +388,8 @@ nav {
     width: 550px;
     overflow: hidden;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
+    filter: drop-shadow(2px 2px 8px #a5a5a59c);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,7 +416,7 @@ nav {
 #location {
     height: 100vh;
     width: 100%;
-    background-color: #111;
+    background-color: #ffff;
     display: flex;
 }
 
@@ -466,7 +454,7 @@ nav {
     #main {
         width: 100%;
         overflow-x: hidden;
-        background-color: #111;
+        background-color: #fff;
     }
 
     nav {
@@ -475,13 +463,23 @@ nav {
         width: 100%;
     }
 
-    #logo {
-        font-size: 4vw;
+    #logo img {
+        height: 10vw;
+    }
+
+    #navcontent {
+        background-color: #00000000;
     }
 
     #navcontent a {
         font-size: 3vw;
         padding-left: 1.5vw;
+    }
+
+    #navcontent i {
+        font-size: 8vw;
+        padding-left: 1.5vw;
+        color: #fff;
     }
 
     #home video {
@@ -539,6 +537,7 @@ nav {
         flex-direction: column;
         align-items: center;
         padding-top: 48vw;
+        background-color: #fff;
     }
 
     #right-content {
@@ -572,6 +571,7 @@ nav {
     #boxes {
         gap: 8vw;
         flex-direction: column;
+        background-color: #fff;
     }
 
     .box {
@@ -579,10 +579,12 @@ nav {
         height: 300px;
         width: 320px;
         padding: 0 2vw;
+        background-color: #dadada;
     }
 
     #services {
         gap: 8vw;
+        background-color: #fff;
     }
 
     #title-content {
@@ -591,6 +593,7 @@ nav {
 
     #title-content h1 {
         padding-top: 8vw;
+        color: #000000;
         font-size: 12vw;
     }
 
@@ -609,6 +612,8 @@ nav {
         width: 280px;
         border-radius: 10px;
         gap: 2vw;
+        background-color: #fff;
+        filter: drop-shadow(2px 2px 8px #a5a5a59c);
         padding: 1vw;
         flex-direction: column;
     }
@@ -631,7 +636,7 @@ nav {
     #main {
         width: 100%;
         overflow-x: hidden;
-        background-color: #111;
+        background-color: #fff;
     }
 
     nav {
@@ -639,12 +644,23 @@ nav {
         padding: 0 4vw;
     }
 
-    #logo {
-        font-size: 4vw;
+    #logo img {
+        height: 10vw;
+    }
+
+
+    #navcontent {
+        background-color: #00000000;
     }
 
     #navcontent a {
         font-size: 3vw;
+        padding-left: 1.5vw;
+    }
+
+    #navcontent i {
+        font-size: 8vw;
+        color: #fff;
         padding-left: 1.5vw;
     }
 
@@ -658,7 +674,7 @@ nav {
     }
 
     #title-head p {
-        font-size: 14px;
+        font-size: 15px;
         color: #ffffff;
     }
 
@@ -695,6 +711,7 @@ nav {
         flex-direction: column;
         align-items: center;
         padding-top: 48vw;
+        background-color: #fff;
     }
 
     #right-content {
@@ -728,6 +745,7 @@ nav {
     #boxes {
         gap: 8vw;
         flex-direction: column;
+        background-color: #fff;
     }
 
     .box {
@@ -735,11 +753,13 @@ nav {
         height: 300px;
         width: 320px;
         padding: 0 2vw;
+        background-color: #dadada;
     }
 
     #services {
         gap: 8vw;
         height: fit-content;
+        background-color: #fff;
         padding-bottom: 4vw;
     }
 
@@ -750,6 +770,7 @@ nav {
     #title-content h1 {
         padding-top: 8vw;
         font-size: 8vw;
+        color: #000000;
     }
 
     #title-content p {
@@ -768,6 +789,8 @@ nav {
         border-radius: 10px;
         gap: 2vw;
         padding: 1vw;
+        background-color: #fff;
+        filter: drop-shadow(2px 2px 8px #a5a5a59c);
         flex-direction: column;
     }
 
@@ -786,11 +809,12 @@ nav {
 }
 
 @media (min-width:768px) {
-    #main{
+    #main {
         width: 100%;
         overflow-x: hidden;
-        background-color: #111;
+        background-color: #fff;
     }
+
     nav {
         height: 100px;
         padding: 0 4vw;
@@ -803,6 +827,11 @@ nav {
     #navcontent a {
         font-size: 3vw;
         padding-left: 1.5vw;
+    }
+
+    #navcontent i {
+        color: #fff;
+        font-size: 6vw;
     }
 
     #home video {
@@ -851,6 +880,7 @@ nav {
     #about {
         flex-direction: initial;
         gap: 1vw;
+        background-color: #fff;
         padding-top: 0;
     }
 
@@ -881,12 +911,14 @@ nav {
     #boxes {
         gap: 8vw;
         flex-direction: row;
+        background-color: #fff;
     }
 
     .box {
         border-radius: 20px;
         height: 300px;
         width: 320px;
+        background-color: #dadada;
         padding: 0 2vw;
     }
 
@@ -909,9 +941,15 @@ nav {
         gap: 2vw;
     }
 
+    #services {
+        background-color: #fff;
+    }
+
     .service {
         height: 300px;
         width: 300px;
+        background-color: #fff;
+        filter: drop-shadow(2px 2px 8px #a5a5a59c);
     }
 
     .service img {
@@ -932,11 +970,12 @@ nav {
 }
 
 @media (min-width:1280px) {
-    #main{
+    #main {
         width: 100%;
         overflow-x: hidden;
-        background-color: #111;
+        background-color: #fff;
     }
+
     nav {
         height: 100px;
         width: 100%;
@@ -950,20 +989,14 @@ nav {
         z-index: 12;
     }
 
-    #logo {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 1.4vw;
-        text-transform: uppercase;
-        font-family: integral CF;
-        font-weight: 600;
-        padding-left: 1.5vw;
+    #logo img {
+        height: 2.8vw;
     }
 
     #navcontent {
         height: 60px;
         width: 60px;
-        background-color: #ffffff71;
+        background-color: #00000000;
         overflow: hidden;
         display: flex;
         border-radius: 50%;
@@ -973,12 +1006,12 @@ nav {
     }
 
     #navcontent:hover {
-        background-color: #ffffff;
+        background-color: #111;
     }
 
-    #navcontent img {
-        height: 50%;
-        width: 50%;
+    #navcontent i {
+        font-size: 1.6vw;
+        color: #fff;
     }
 
     #menu-content {
@@ -1037,7 +1070,7 @@ nav {
         height: 100vh;
         width: 100%;
         overflow: hidden;
-        background-color: #111;
+        background-color: #fff;
     }
 
     #home video {
@@ -1170,7 +1203,7 @@ nav {
     #hotelpic {
         height: 100vh;
         width: 100%;
-        background-color: #1c1c1c;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1180,7 +1213,7 @@ nav {
 
     #hotelpic h1 {
         font-size: 4vw;
-        font-family: integral CF;
+        /* font-family: integral CF; */
         color: #4b4b4b;
     }
 
@@ -1219,7 +1252,7 @@ nav {
         height: fit-content;
         padding: 4vw;
         width: 100%;
-        background-color: #111;
+        background-color: #ffff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1231,7 +1264,7 @@ nav {
         border-radius: 25px;
         height: 500px;
         width: 500px;
-        background-color: rgb(255, 255, 255);
+        background-color: #dadada;
         overflow: hidden;
     }
 
@@ -1239,7 +1272,7 @@ nav {
         height: fit-content;
         width: 100%;
         padding-bottom: 4vw;
-        background-color: #161616;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1256,8 +1289,7 @@ nav {
 
     #title-content h1 {
         font-size: 4vw;
-        font-family: integral CF;
-        color: #ffffff;
+        color: #000000;
     }
 
     #title-content p {
@@ -1275,7 +1307,8 @@ nav {
         width: 550px;
         overflow: hidden;
         border-radius: 20px;
-        background-color: #ffffff;
+        background-color: #fff;
+        filter: drop-shadow(2px 2px 8px #a5a5a59c);
         display: flex;
         align-items: center;
         justify-content: center;
