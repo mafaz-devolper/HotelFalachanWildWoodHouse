@@ -234,6 +234,7 @@ nav {
 .icon1 a {
     text-decoration: none;
 }
+
 .icon2 a {
     text-decoration: none;
 }
@@ -354,11 +355,13 @@ nav {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
-.box img{
+
+.box img {
     height: 100%;
     width: 100%;
     scale: 1.2;
 }
+
 #services {
     height: 100vh;
     width: 100%;
@@ -460,13 +463,20 @@ nav {
 /* ------------responsive for home-------------- */
 
 @media (min-width:320px) {
+    #main {
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #111;
+    }
+
     nav {
         height: 80px;
         padding: 0 4vw;
+        width: 100%;
     }
 
     #logo {
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     #navcontent a {
@@ -618,6 +628,12 @@ nav {
 }
 
 @media (min-width:400px) {
+    #main {
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #111;
+    }
+
     nav {
         height: 80px;
         padding: 0 4vw;
@@ -770,6 +786,11 @@ nav {
 }
 
 @media (min-width:768px) {
+    #main{
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #111;
+    }
     nav {
         height: 100px;
         padding: 0 4vw;
@@ -911,7 +932,11 @@ nav {
 }
 
 @media (min-width:1280px) {
-
+    #main{
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #111;
+    }
     nav {
         height: 100px;
         width: 100%;
